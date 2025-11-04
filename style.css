@@ -905,3 +905,23 @@ footer a,
   text-decoration: none;
 }
 
+
+/* للشاشات اللمسية فقط */
+@media (hover: none) and (pointer: coarse) {
+  .About-grid-card,
+  .skill-card,
+  .project-card,
+  .recommendation-card,
+  .contact-info-upper-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .About-grid-card:active,
+  .skill-card:active,
+  .project-card:active,
+  .recommendation-card:active,
+  .contact-info-upper-container:active {
+    box-shadow: 0 0 20px #4B0082;
+    transform: scale(1.03);
+  }
+}
