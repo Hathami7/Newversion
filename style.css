@@ -925,3 +925,66 @@ footer a,
     transform: scale(1.03);
   }
 }
+/* لكل الشاشات الصغيرة (الجوال) */
+@media (max-width: 768px) {
+  /* قسم المشاريع */
+  .projects-container {
+    flex-direction: column; /* تصطف تحت بعض */
+    gap: 20px; /* مسافة بين البوكسات */
+    width: 90%; /* لا تتجاوز الإطار */
+    margin: 0 auto;
+  }
+
+  .project-card {
+    width: 100%; /* يمتلئ عرض الحاوية */
+    max-width: 100%; /* يمنع التوسع */
+    padding: 15px; 
+  }
+
+  /* قسم المهارات */
+  .skills-grid {
+    grid-template-columns: 1fr; /* بوكس واحد في الصف */
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* About Me */
+  .About-grid {
+    flex-direction: column; /* تصطف عمودي */
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .About-grid-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Recommendations */
+  .recommendations-grid {
+    grid-template-columns: 1fr; /* بوكس واحد في كل صف */
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .recommendation-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Contact */
+  .contact-info-upper-container {
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-info-container {
+    width: 100%;
+    justify-content: center;
+  }
+}
