@@ -906,85 +906,192 @@ footer a,
 }
 
 
-/* للشاشات اللمسية فقط */
-@media (hover: none) and (pointer: coarse) {
-  .About-grid-card,
-  .skill-card,
-  .project-card,
-  .recommendation-card,
-  .contact-info-upper-container {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .About-grid-card:active,
-  .skill-card:active,
-  .project-card:active,
-  .recommendation-card:active,
-  .contact-info-upper-container:active {
-    box-shadow: 0 0 20px #4B0082;
-    transform: scale(1.03);
-  }
+/* container that holds both frames */
+.purple-frames {
+  display: flex;
+  gap: 40px; /* مسافة أكبر بين الإطارين */
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
-/* لكل الشاشات الصغيرة (الجوال) */
-@media (max-width: 768px) {
-  /* قسم المشاريع */
-  .projects-container {
-    flex-direction: column; /* تصطف تحت بعض */
-    gap: 20px; /* مسافة بين البوكسات */
-    width: 90%; /* لا تتجاوز الإطار */
-    margin: 0 auto;
-  }
 
-  .project-card {
-    width: 100%; /* يمتلئ عرض الحاوية */
-    max-width: 100%; /* يمنع التوسع */
-    padding: 15px; 
-  }
+/* each frame box */
+.purple-frame {
+  flex: 1 1 420px;
+  background: transparent; /* بدون خلفية */
+  border: 3px solid #5a2a90; /* حدود بنفسجي غامق */
+  border-radius: 18px;
+  padding: 22px;
+  color: #fff;
+  min-width: 320px;
+}
 
-  /* قسم المهارات */
-  .skills-grid {
-    grid-template-columns: 1fr; /* بوكس واحد في الصف */
-    gap: 15px;
-    width: 90%;
-    margin: 0 auto;
-  }
+/* عنوان كل إطار */
+.frame-title {
+  margin: 0 0 14px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c8a9ff; /* بنفسجي فاتح جميل */
+}
 
-  /* About Me */
-  .About-grid {
-    flex-direction: column; /* تصطف عمودي */
-    gap: 20px;
-    width: 90%;
-    margin: 0 auto;
-  }
+/* الشبكة داخل الإطار */
+.purple-frame .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 18px;
+}
 
-  .About-grid-card {
-    width: 100%;
-    max-width: 100%;
-  }
+/* كرت كل مهارة */
+.skill-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  transition: transform .18s ease, background .18s ease;
+}
 
-  /* Recommendations */
-  .recommendations-grid {
-    grid-template-columns: 1fr; /* بوكس واحد في كل صف */
-    gap: 20px;
-    width: 90%;
-    margin: 0 auto;
-  }
+/* عند الهوفر */
+.skill-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.10);
+}
 
-  .recommendation-card {
-    width: 100%;
-    max-width: 100%;
-  }
+/* للآيقونات في قسم Other: رجوع الألوان */
+.skill-card i {
+  font-size: 30px;
+  color: inherit; /* يخلي اللون حق الـ style اللي انتي كاتبتها سابقًا يرجع */
+}
 
-  /* Contact */
-  .contact-info-upper-container {
+/* لو حابة نخلي نص المهارات أبيض */
+.skill-card h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* responsive */
+@media (max-width: 860px) {
+  .purple-frames {
     flex-direction: column;
-    gap: 15px;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .contact-info-container {
-    width: 100%;
-    justify-content: center;
+    gap: 25px; /* مسافة بين الإطارين للجوال */
   }
 }
+/* كل كرت مهارة */
+.skill-card {
+  background: #000000; /* أسود */
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  transition: transform .18s ease, background .18s ease;
+}
+
+/* عند الهوفر */
+.skill-card:hover {
+  transform: translateY(-6px);
+  background: #111111; /* أسود أغمق عند الهوفر */
+}
+
+/* النصوص */
+.skill-card h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff; /* أبيض */
+}
+
+/* أيقونات داخل الكرت */
+.skill-card i,
+.skill-card img {
+  font-size: 40px; 
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* container that holds both frames */
+.purple-frames {
+  display: flex;
+  gap: 40px; /* مسافة بين الإطارين */
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* كل إطار */
+.purple-frame {
+  flex: 1 1 420px;
+  background: #000000; /* خلفية سوداء */
+  border: 3px solid #5a2a90; /* حدود بنفسجي غامق */
+  border-radius: 18px;
+  padding: 22px;
+  color: #fff;
+  min-width: 320px;
+}
+
+/* عنوان الإطار */
+.frame-title {
+  margin: 0 0 14px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c8a9ff; /* بنفسجي فاتح */
+}
+
+/* شبكة الكروت داخل الإطار */
+.purple-frame .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 18px;
+}
+
+/* كل كرت مهارة */
+.skill-card {
+  background: #000000; /* خلفية سوداء للكرت */
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  transition: transform .18s ease, background .18s ease;
+}
+
+/* عند التحويم */
+.skill-card:hover {
+  transform: translateY(-6px);
+  background: #111111; /* أسود أغمق عند الهوفر */
+}
+
+/* النصوص */
+.skill-card h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff; /* أبيض */
+}
+
+/* الأيقونات داخل الكرت */
+.skill-card i,
+.skill-card img {
+  font-size: 40px; 
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* responsive */
+@media (max-width: 860px) {
+  .purple-frames {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+
