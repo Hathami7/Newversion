@@ -5,10 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Website</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <!-- مكتبة التحريك AOS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
@@ -28,7 +30,7 @@
     </a>
   </header>
 
-  <!-- ABOUT SECTION -->
+  <!-- ABOUT -->
   <section id="#" class="about">
     <div class="about-container">
       <img src="my.jpeg" alt="mylogo" />
@@ -40,17 +42,11 @@
         </div>
         <div class="btn-group">
           <button class="btn" onclick="window.open('Hathami Salman Almalki.pdf')">My CV</button>
-          <a href="#contact">
-            <button class="btn">Contact Info</button>
-          </a>
+          <a href="#contact"><button class="btn">Contact Info</button></a>
         </div>
         <div class="socials">
-          <a href="https://github.com/Hathami7" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/hathami-almalki-36009b320" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
+          <a href="https://github.com/Hathami7" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/hathami-almalki-36009b320" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>
     </div>
@@ -62,12 +58,8 @@
     <div class="About-info">
       <div class="About-grid">
         <div class="About-grid-card" data-aos="fade-right">
-          <h3 class="major">
-            <span class="lang-content active">Information Technology Graduate</span>
-          </h3>
-          <p class="date">
-            <span class="lang-content active">Bachelor's degree in Information Technology | Jazan University | 2024</span>
-          </p>
+          <h3 class="major"><span class="lang-content active">Information Technology Graduate</span></h3>
+          <p class="date"><span class="lang-content active">Bachelor's degree in Information Technology | Jazan University | 2024</span></p>
           <p>
             <span class="lang-content active">
               Information Technology graduate with strong programming skills and hands-on experience in database management. Led a high-performing team in our graduation project, earning top honors in the IT department by supervising design and implementation with precision and efficiency. Skilled in PHP, Java, HTML, CSS, and SQL through multiple database-driven projects. Passionate about leveraging technical expertise to drive innovation and deliver impactful solutions in the IT industry.
@@ -78,33 +70,37 @@
     </div>
   </section>
 
-  <!-- TECHNICAL & SOFT SKILLS -->
-  <section id="Skills" class="fade-in" data-aos="zoom-in">
-    <section class="skills-section">
-      <h2 class="section-title">My Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card" data-aos="fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><h3>Java</h3></div>
-        <div class="skill-card" data-aos="fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" /><h3>HTML</h3></div>
-        <div class="skill-card" data-aos="fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" /><h3>CSS</h3></div>
-        <div class="skill-card" data-aos="fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><h3>JavaScript</h3></div>
-        <div class="skill-card" data-aos="fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /><h3>Python</h3></div>
-        <div class="skill-card" data-aos="fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" /><h3>PHP</h3></div>
-        <div class="skill-card" data-aos="fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" /><h3>SQL</h3></div>
-        <div class="skill-card" data-aos="fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" /><h3>Swift</h3></div>
+  <!-- SKILLS -->
+  <section id="Skills" class="skills-wrapper fade-in" data-aos="fade-up" data-aos-duration="800">
+    <h2 class="section-title">My Skills</h2>
+    <div class="purple-frames">
+
+      <!-- FRAME 1: Software development -->
+      <div class="purple-frame" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <h1 class="frame-title">Software development</h1>
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="100"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><h3>Java</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="200"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" /><h3>HTML</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="300"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" /><h3>CSS</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="400"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><h3>JavaScript</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="500"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /><h3>Python</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="600"><i class="devicon-figma-original colored" style="font-size:40px;"></i><h3>Figma</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="700"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" /><h3>SQL</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="800"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" /><h3>Swift</h3></div>
+        </div>
       </div>
 
-      <h2 class="section-title" style="margin-top:50px;">My Soft Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card" data-aos="fade-up"><i class="fas fa-comments" style="color:#FF5733;"></i><h3>Communication</h3></div>
-        <div class="skill-card" data-aos="fade-up"><i class="fas fa-users" style="color:#33B5FF;"></i><h3>Teamwork</h3></div>
-        <div class="skill-card" data-aos="fade-up"><i class="fas fa-lightbulb" style="color:#FFC300;"></i><h3>Creativity</h3></div>
-        <div class="skill-card" data-aos="fade-up"><i class="fas fa-clock" style="color:#9B59B6;"></i><h3>Time Management</h3></div>
-        <div class="skill-card" data-aos="fade-up"><i class="fas fa-tasks" style="color:#FF33A8;"></i><h3>Problem Solving</h3></div>
-        <div class="skill-card" data-aos="fade-up"><i class="fas fa-handshake" style="color:#2ECC71;"></i><h3>Adaptability</h3></div>
-        <div class="skill-card" data-aos="fade-up"><i class="fas fa-brain" style="color:#E67E22;"></i><h3>Critical Thinking</h3></div>
-        <div class="skill-card" data-aos="fade-up"><i class="fas fa-star" style="color:#3498DB;"></i><h3>Leadership</h3></div>
+      <!-- FRAME 2: Other -->
+      <div class="purple-frame soft-frame" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <h1 class="frame-title">Other</h1>
+        <div class="skills-grid other-grid">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="100"><i class="devicon-git-plain colored"></i><h3>Git</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="200"><i class="devicon-github-original"></i><h3>GitHub</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="300"><i class="devicon-vscode-plain colored"></i><h3>VS Code</h3></div>
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="400"><i class="devicon-figma-plain colored"></i><h3>Figma</h3></div>
+        </div>
       </div>
-    </section>
+    </div>
   </section>
 
   <!-- PROJECTS -->
@@ -121,9 +117,14 @@
         <p>A website for booking and managing flights easily, featuring a user-friendly interface and multiple search options.</p>
       </div>
       <div class="project-card" data-aos="fade-right" data-aos-delay="600">
-        <h3>Figma Projects</h3>
-        <p>Designed multiple projects in Figma reflecting creativity, user-centered design, and effective UI/UX solutions for web and mobile applications.</p>
-      </div>
+        <h3>UI/UX</h3>
+        <p>I design with creativity and a user-centered approach to deliver effective UI/UX solutions for both web and mobile applications.<br><br>You can see my <a href="https://www.behance.net/hathamialmalki" target="_blank" class="behance-link">Behance</a></p>
+     <style>
+a.behance-link {
+  text-decoration: underline;  
+}
+</style>
+ </div>
     </div>
   </section>
 
@@ -146,32 +147,29 @@
     </div>
   </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact-section" data-aos="fade-up">
-  <h1 class="title" data-aos="fade-down" data-aos-duration="1000">Contact Me!</h1>
-  <div class="contact-info-upper-container">
-    
-    <div class="contact-info-container" data-aos="fade-right" data-aos-duration="1000">
-      <i class="fa-solid fa-envelope icon contact-icon email-icon"></i>
-      <p>
-        <a href="mailto:hathami.almalki@gmail.com">hathami.almalki@gmail.com</a>
-      </p>
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section" data-aos="fade-up">
+    <h1 class="title" data-aos="fade-down" data-aos-duration="1000">Contact Me!</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container" data-aos="fade-right" data-aos-duration="1000">
+        <i class="fa-solid fa-envelope icon contact-icon email-icon"></i>
+        <p><a href="mailto:hathami.almalki@gmail.com">hathami.almalki@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <i class="fa-brands fa-github icon contact-icon"></i>
+        <p><a href="https://github.com/Hathami7" target="_blank">GitHub</a></p>
+      </div>
     </div>
+  </section>
 
-    <div class="contact-info-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-      <i class="fa-brands fa-github icon contact-icon"></i>
-      <p><a href="https://github.com/Hathami7" target="_blank">GitHub</a></p>
-    </div>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+</body>
+</html>
 
-  </div>
-</section>
-
-<!-- AOS CSS & JS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1200, // مدة الحركة لكل العناصر
-    once: true,      // تتحرك مرة واحدة عند الظهور
-  });
-</script>
